@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://board/Chess Board.tscn" type="PackedScene" id=1]
+
+[node name="Chess" type="Node2D"]
+position = Vector2( 96, 24 )
+
+[node name="Chess Board" parent="." instance=ExtResource( 1 )]
+XOFFSET = 104
+YOFFSET = 32
+
+[node name="black" type="Node" parent="Chess Board"]
+
+[node name="white" type="Node" parent="Chess Board"]

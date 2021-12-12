@@ -1,0 +1,206 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://board/Board.gd" type="Script" id=1]
+[ext_resource path="res://board/light square.tscn" type="PackedScene" id=2]
+[ext_resource path="res://board/dark square.tscn" type="PackedScene" id=3]
+
+[node name="Chess Board" type="Node"]
+script = ExtResource( 1 )
+startX = 100
+startY = 30
+
+[node name="dark squares" type="Node" parent="."]
+
+[node name="dark square" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 120, 32 )
+
+[node name="dark square2" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 104, 48 )
+
+[node name="dark square3" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 136, 48 )
+
+[node name="dark square4" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 152, 32 )
+
+[node name="dark square5" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 168, 48 )
+
+[node name="dark square6" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 184, 32 )
+
+[node name="dark square7" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 200, 48 )
+
+[node name="dark square8" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 216, 32 )
+
+[node name="dark square9" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 120, 64 )
+
+[node name="dark square10" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 152, 64 )
+
+[node name="dark square11" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 184, 64 )
+
+[node name="dark square12" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 216, 64 )
+
+[node name="dark square13" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 104, 80 )
+
+[node name="dark square14" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 136, 80 )
+
+[node name="dark square15" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 168, 80 )
+
+[node name="dark square16" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 200, 80 )
+
+[node name="dark square17" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 216, 96 )
+
+[node name="dark square18" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 152, 96 )
+
+[node name="dark square20" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 120, 96 )
+
+[node name="dark square21" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 104, 112 )
+
+[node name="dark square22" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 136, 112 )
+
+[node name="dark square23" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 168, 112 )
+
+[node name="dark square24" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 200, 112 )
+
+[node name="dark square25" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 216, 128 )
+
+[node name="dark square26" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 184, 128 )
+
+[node name="dark square27" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 152, 128 )
+
+[node name="dark square28" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 120, 128 )
+
+[node name="dark square30" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 136, 144 )
+
+[node name="dark square31" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 168, 144 )
+
+[node name="dark square32" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 200, 144 )
+
+[node name="dark square29" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 104, 144 )
+
+[node name="dark square19" parent="dark squares" instance=ExtResource( 3 )]
+position = Vector2( 184, 96 )
+
+[node name="light squares" type="Node" parent="."]
+
+[node name="light square" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 104, 32 )
+
+[node name="light square2" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 136, 32 )
+
+[node name="light square3" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 168, 32 )
+
+[node name="light square4" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 200, 32 )
+
+[node name="light square5" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 216, 48 )
+
+[node name="light square6" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 184, 48 )
+
+[node name="light square7" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 152, 48 )
+
+[node name="light square8" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 120, 48 )
+
+[node name="light square9" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 104, 64 )
+
+[node name="light square10" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 136, 64 )
+
+[node name="light square11" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 168, 64 )
+
+[node name="light square12" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 200, 64 )
+
+[node name="light square13" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 216, 80 )
+
+[node name="light square14" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 184, 80 )
+
+[node name="light square15" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 152, 80 )
+
+[node name="light square16" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 120, 80 )
+
+[node name="light square17" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 104, 96 )
+
+[node name="light square18" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 136, 96 )
+
+[node name="light square19" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 168, 96 )
+
+[node name="light square20" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 200, 96 )
+
+[node name="light square21" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 216, 112 )
+
+[node name="light square22" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 184, 112 )
+
+[node name="light square23" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 152, 112 )
+
+[node name="light square24" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 120, 112 )
+
+[node name="light square25" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 104, 128 )
+
+[node name="light square26" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 136, 128 )
+
+[node name="light square27" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 168, 128 )
+
+[node name="light square28" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 200, 128 )
+
+[node name="light square29" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 216, 144 )
+
+[node name="light square30" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 184, 144 )
+
+[node name="light square31" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 152, 144 )
+
+[node name="light square32" parent="light squares" instance=ExtResource( 2 )]
+position = Vector2( 120, 144 )

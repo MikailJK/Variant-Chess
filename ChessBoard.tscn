@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/Chess Pieces.png" type="Texture" id=1]
+[ext_resource path="res://board/Chess Board.tscn" type="PackedScene" id=4]
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends StaticBody2D
+
+
+
+func _on_Pawn_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton:
+		if event.button_index == BUTTON_LEFT and event.pressed:
+			queue_free()
+	
+"
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 8 )
+
+[node name="Chess" type="Node2D"]
+position = Vector2( 96, 24 )
+
+[node name="Chess Board" parent="." instance=ExtResource( 4 )]
+
+[node name="Pawn" type="StaticBody2D" parent="."]
+position = Vector2( -96, -24 )
+input_pickable = true
+script = SubResource( 2 )
+
+[node name="Pawn Sprite" type="Sprite" parent="Pawn"]
+position = Vector2( 96, 136 )
+z_index = 1
+texture = ExtResource( 1 )
+offset = Vector2( 8, 8 )
+hframes = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pawn"]
+position = Vector2( 104, 144 )
+shape = SubResource( 1 )
+
+[connection signal="input_event" from="Pawn" to="Pawn" method="_on_Pawn_input_event"]
